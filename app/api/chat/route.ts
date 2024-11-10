@@ -42,7 +42,7 @@ export async function POST(req: Request) {
             docContext = JSON.stringify(docsMap)
 
         } catch (err) {
-            console.log("Error with database querying...")
+            console.log("Error with database querying. " + err)
         }
 
         const template = {
